@@ -4,6 +4,7 @@ function App() {
     <>
  <h1>Hello World !!</h1>
  <Random />
+ <p>I hope you all are doing well</p>
     </>
   )
 }
