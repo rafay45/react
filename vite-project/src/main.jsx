@@ -1,9 +1,16 @@
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+// const createReact = React.createElement(
+//   'a',
+//   {href:'https://google.com', target:'_blank'},
+//   'Google',
+// )
+
+createRoot(document.getElementById('root')).
+  render(
     <App />
-  </StrictMode>,
-)
+    // createReact
+  )
+// import ReactDOM from 'react-dom/client'
