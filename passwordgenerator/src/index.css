@@ -1,0 +1,9 @@
+@import "tailwindcss";
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(assets/gradient-abstract-wireframe-background_23-2149009903.avif);
+}
