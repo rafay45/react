@@ -31,7 +31,7 @@ function App() {
   // }, [number , character , length , passwordgenerator])
   return (
     <>
-      <div className=' bg-black w-3xl h-40 py-2 rounded-2xl top-30 relative text-gray-500'>
+      <div className=' bg-black w-3xl h-40 py-2 shadow-2xl rounded-2xl top-30 relative text-gray-500'>
         <h1 className=' text-gray-500 font-bold font-sans text-2xl absolute left-80 shadow-2xl'>PASSWORD</h1>
         <button 
         onClick={passwordgenerator}
