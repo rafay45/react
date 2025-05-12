@@ -17,11 +17,11 @@ function App() {
       let generatePassword = Math.floor(Math.random() * alpha.length + 1)
       storePassword += alpha.charAt(generatePassword)
     }
-     setPassword(storePassword)
+    setPassword(storePassword)
   }, [length, number, character, setPassword])
 
   let ref = useRef(null)
-  const copyPassword = useCallback(() =>{
+  const copyPassword = useCallback(() => {
     ref.current?.select()
     // ref.current?.setSelectionRange(0, 5)
     window.navigator.clipboard.writeText(password)
@@ -33,9 +33,9 @@ function App() {
     <>
       <div className=' bg-black w-3xl h-40 py-2 shadow-2xl rounded-2xl top-30 relative text-gray-500'>
         <h1 className=' text-gray-500 font-bold font-sans text-2xl absolute left-80 shadow-2xl'>PASSWORD</h1>
-        <button 
-        onClick={passwordgenerator}
-        className={` border-t-4 border-b-4 hover:border-gray-700 rounded-full shadow cursor-pointer border-gray-500 w-8 h-8 absolute right-4 top-2 `}
+        <button
+          onClick={passwordgenerator}
+          className={` border-t-4 border-b-4 hover:border-gray-700 rounded-full shadow cursor-pointer border-gray-500 w-8 h-8 absolute right-4 top-2 `}
         ></button>
         <div className=' w-2xl bg-white rounded-xl h-12 absolute left-12 top-14'>
           <input
