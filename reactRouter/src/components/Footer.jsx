@@ -7,7 +7,7 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src=""
+                                src= "src/assets/logo.png"
                                 className="mr-3 h-16"
                                 alt="Logo"
                             />
@@ -20,7 +20,7 @@ export default function Footer() {
                                 <li className="mb-4">
                                       <NavLink 
                                       to= "/"
-                                    className={({isActive}) => `${isActive ? "text-orange-700" : "text-gray-700"} hover:underline `}
+                                    className={({isActive}) => `${isActive ? "text-amber-900" : "text-gray-700"} hover:underline `}
                                     >
                                         Home
                                     </NavLink>
@@ -28,7 +28,7 @@ export default function Footer() {
                                 <li>
                                     <NavLink 
                                     to= "/about"
-                                    className={({isActive}) => `${isActive ? "text-orange-700" : "text-gray-700"} hover:underline `}
+                                    className={({isActive}) => `${isActive ? "text-amber-900" : "text-gray-700"} hover:underline `}
                                     >
                                        About
                                     </NavLink>
@@ -75,9 +75,9 @@ export default function Footer() {
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
-                        © 2023
+                        © 2025 
                         <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            hiteshchoudhary
+                             Rafay
                         </a>
                         . All Rights Reserved.
                     </span>
