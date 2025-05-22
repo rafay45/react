@@ -6,7 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
-import Company from './components/Company.jsx'
+import Company, { rankInfo } from './components/Company.jsx'
 import User from './components/User.jsx'
 
 // const router = createBrowserRouter([
@@ -37,7 +37,11 @@ const router = createBrowserRouter (
     <Route path='about' element ={<About />} />
     <Route path='contact' element ={<Contact />} />
     <Route path='name/:userid' element ={<User />} />
-    <Route path='company' element ={<Company />} />
+    <Route 
+    loader={rankInfo}
+     path='company'
+     element ={<Company />}
+      />
     </Route>
   )
 )

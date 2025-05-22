@@ -1,4 +1,5 @@
 import {Link, NavLink } from "react-router-dom";
+import logo from "../assets/logo.png"
 export default function Footer() {
     return (
         <footer className="bg-white border-y">
@@ -7,7 +8,7 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src= "src/assets/logo.png"
+                                src= {logo}
                                 className="mr-3 h-16"
                                 alt="Logo"
                             />
@@ -36,23 +37,28 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact & Info</h2>
                             <ul className="text-gray-500 font-medium">
-                                <li className="mb-4">
-                                    <a
-                                        href="https://github.com/hiteshchoudhary"
-                                        className="hover:underline"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Github
-                                    </a>
-                                </li>
-                                <li>
-                                    <Link to="/" className="hover:underline">
-                                        Discord
-                                    </Link>
-                                </li>
+                                  <li>
+                                <NavLink
+                                to= "/company"
+                                    className={({isActive}) =>
+                                        `${isActive ? "text-amber-900" : "text-gray-700"} block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-amber-900 lg:p-0`
+                                    }
+                                >
+                                    ConpanyInfo
+                                </NavLink>
+                            </li>
+                                   <li>
+                                <NavLink
+                                to= "/contact"
+                                    className={({isActive}) =>
+                                        `${isActive ? "text-amber-900" : "text-gray-700"} mt-4 block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-amber-900 lg:p-0`
+                                    }
+                                >
+                                    Contact
+                                </NavLink>
+                            </li>
                             </ul>
                         </div>
                         <div>
@@ -76,7 +82,7 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2025 
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
+                        <a href="https://github.com/rafay45" className="hover:underline">
                              Rafay
                         </a>
                         . All Rights Reserved.
