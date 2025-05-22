@@ -1,0 +1,11 @@
+import React, {useContext} from 'react'
+import UserContext from '../context/UserContext'
+
+function Profile() {
+   const {user} = useContext(UserContext)
+   if(!user) return <div>You will have to fill out the form mandatorily.</div>
+   return <div>Welcome {user.userName}</div>
+   
+}
+
+export default Profile
