@@ -15,8 +15,6 @@ function App() {
   }
   const Decreament = () => {
     if (counter > 1) {
-      
-      
       setCounter(counter - 1)
     } else if (counter === stopVar) {
       setCounter(19)

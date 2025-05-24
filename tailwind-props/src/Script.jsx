@@ -1,4 +1,3 @@
-import React from "react";
 function Card({tittle, firstUser, secondUser, thirdUser, secondtittle}) {
     return(
         <>
