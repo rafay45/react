@@ -5,13 +5,13 @@ export const createTodoContext = createContext({
         {
             id: 1,
             todomsg: " Todo msg",
-            completed: false
+            checked: false
         }
     ],
-    addTodo: (todo) => {},
-    editTodo: (id , todo) => {},
-    deletetodo: (id) => {},
-    ToggleTodo: (id) => {}
+    addTodo: (todo) => { },
+    editTodo: (id, todo) => { },
+    deleteTodo: (id) => { },
+    toggleTodo: (id) => { }
 })
 
 export const TodoContextProvider = createTodoContext.Provider
