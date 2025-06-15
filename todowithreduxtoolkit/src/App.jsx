@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <h1>Now I'm learning About Radux Toolkit</h1>
+      <h1>Now I'm learning About Radux Toolkit</h1>
     </>
   )
 }
