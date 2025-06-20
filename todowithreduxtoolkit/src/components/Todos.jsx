@@ -6,4 +6,4 @@ function Todos() {
   )
 }
 
-export default Todos
+export default Todos;
