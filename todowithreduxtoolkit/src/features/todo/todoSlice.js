@@ -20,7 +20,10 @@ export const todoSlice = createSlice({
         },
         removeTodo: (state, action) => {
             state.todos = state.todos.filter((todo) => todo.id.payload !== action.payload)
-        }
+        },
+        // editTodo: (state, action) => {
+           
+        // }
     }
 })
 
