@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addTodos } from '../features/todo/todoSlice'
+import { editTodo } from '../features/todo/todoSlice'
 
 function AddTodo() {
   const [input, setInput] = useState('')
