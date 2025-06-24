@@ -7,8 +7,8 @@ import AddTodo from './AddTodo';
 function Todos() {
   const todos = useSelector(state => state.todos);
   const dispatch = useDispatch();
-   const edit = (todo) => {
-    const newTodo = prompt("Edit your todo:", todo.text) ;
+  const edit = (todo) => {
+    const newTodo = prompt("Edit your todo:", todo.text);
     if (newTodo) {
       dispatch(editTodo({ id: todo.id, text: newTodo }));
     }
@@ -26,7 +26,7 @@ function Todos() {
               onClick={() => edit(todo)}
               className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
             >
-             📝
+              📝
             </button>
             <button
               onClick={() => dispatch(removeTodo(todo.id))}
@@ -55,4 +55,4 @@ function Todos() {
 }
 
 export default Todos;
-export const {edit} = Todos;
+export const { edit } = Todos;
