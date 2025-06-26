@@ -8,7 +8,7 @@ function Todos() {
   const todos = useSelector(state => state.todos);
   const dispatch = useDispatch();
   const edit = (todo) => {
-    const newTodo = prompt("Edit your todo:", todo.text);
+    const newTodo = prompt("Edit your todo", todo.text);
     if (newTodo) {
       dispatch(editTodo({ id: todo.id, text: newTodo }));
     }
@@ -23,7 +23,7 @@ function Todos() {
           >
             <div className='text-white'>{todo.text}</div>
             <button
-              onClick={() => edit(todo)}
+              onClick={() => dispatch(edit(todo))}
               className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
             >
               📝

@@ -6,7 +6,7 @@ const initialState = {
         text: "Learn Redux Toolkit",
     }],
     isEditing: false,
-    editText: "",       
+    editText: "",
     editTodoId: null,
 }
 
