@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addTodos, editTodo, setEditText } from '../features/todo/todoSlice'
+import { addTodos, editTodo,} from '../features/todo/todoSlice'
+import { editText, isEditing, editTodoId } from '../features/todo/todoSlice'
 
 function AddTodo() {
+  const [input, setInput] = useState('')
   const dispatch = useDispatch();
   const { isEditing, editText, editTodoId } = useSelector((state) => state.todos);
 
   const handleChange = (e) => {
-    dispatch(setEditText(e.target.value));
+    dispatch(editText(e.target.value));
   };
 
   const handleSubmit = (e) => {
