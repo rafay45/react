@@ -31,8 +31,8 @@ function App() {
   // }, [number , character , length , passwordgenerator])
   return (
     <>
-      <div className=' bg-black w-3xl h-40 py-2 shadow-2xl rounded-2xl top-30 relative text-gray-500'>
-        <h1 className=' text-gray-500 font-bold font-sans text-2xl absolute left-80 shadow-2xl'>PASSWORD</h1>
+      <div className=' bg-transparent border-2 w-3xl h-40 py-2 shadow-2xl rounded-2xl top-30 relative text-gray-500'>
+        <h1 className=' text-black font-bold font-sans text-2xl absolute left-80 shadow-2xl'>PASSWORD</h1>
         <button
           onClick={passwordgenerator}
           className={` border-t-4 border-b-4 hover:border-gray-700 rounded-full shadow cursor-pointer border-gray-500 w-8 h-8 absolute right-4 top-2 `}
@@ -48,10 +48,10 @@ function App() {
           />
           <button
             onClick={copyPassword}
-            className='bg-blue-700 h-full w-24 rounded-br-xl hover:bg-blue-800  rounded-tr-xl cursor-pointer text-white text-xl font-bold'
+            className='bg-black h-full w-24 rounded-br-xl hover:bg-gray-900 rounded-tr-xl cursor-pointer text-white text-xl font-bold'
           >Copy</button>
         </div>
-        <div className=' justify-center w-xl absolute bottom-3 text-gray-500 shadow gap-5 flex'>
+        <div className=' justify-center w-xl absolute bottom-3 text-black shadow gap-5 flex'>
           <input
             type="range"
             min={5}
