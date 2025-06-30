@@ -22,7 +22,7 @@ function App() {
 
   const convert = () => {
     if (currencyInfo[to]) {
-      setConvertedAmount(amount * currencyInfo[to]);
+      setConvertedAmount(amount * currencyInfo[to].value);
     }
   };
 
@@ -30,11 +30,18 @@ function App() {
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+        backgroundImage: `url('https://i.pinimg.com/736x/e6/8a/17/e68a175caa08d46b0cab1a13c3a1877c.jpg')`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundBlendMode: 'overlay',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backdropFilter: 'blur(5px)',
+        fontFamily: 'Arial, sans-serif',
       }}
     >
       <div className="w-full">
-        <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+        <div className="w-full max-w-md mx-auto border border-white rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
               e.preventDefault();
