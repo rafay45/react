@@ -61,7 +61,7 @@ function App() {
             <div className="relative w-full h-0.5">
               <button
                 type="button"
-                className="absolute left-1/2 cursor-s-resize -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
+                className="absolute left-1/2 cursor-s-resize -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-cyan-950 hover:bg-cyan-900 text-white px-2 py-0.5"
                 onClick={swap}
               >
                 swap
@@ -77,7 +77,7 @@ function App() {
                 amountDisable
               />
             </div>
-            <button type="submit" className="cursor-pointer w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
+            <button type="submit" className="cursor-pointer w-full bg-cyan-950 text-white px-4 py-3 rounded-lg">
               Convert
             </button>
           </form>
