@@ -4,8 +4,8 @@ import useCurrencyInfo from './randomHook/useCurrencyInfo';
 
 function App() {
   const [amount, setAmount] = useState();
-  const [from, setFrom] = useState("");
-  const [to, setTo] = useState("");
+  const [from, setFrom] = useState("ADA");
+  const [to, setTo] = useState("ADA");
   const [convertedAmount, setConvertedAmount] = useState();
 
   const currencyInfo = useCurrencyInfo(from) || {};
@@ -78,7 +78,7 @@ function App() {
               />
             </div>
             <button type="submit" className="cursor-pointer w-full bg-cyan-950 text-white px-4 py-3 rounded-lg">
-              Convert
+              Convert {from.toUpperCase()} to {to.toUpperCase()}
             </button>
           </form>
         </div>
