@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux'
 import { login, logOut } from './store/authSlice'
 import authentication from './services/auth'
 import './App.css'
+import { Outlet } from 'react-router-dom'
+import { Footer, Header } from './components'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -20,7 +22,12 @@ function App() {
   }, [])
 
   return !loading ? (
-    <div>Loading...</div>
+    <div className='bg-red-500 text-3xl '>
+      <Header />
+      Comming Soon...
+      <Outlet />
+      <Footer />
+    </div>
   ) : (null)
 
 
