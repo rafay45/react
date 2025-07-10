@@ -16,11 +16,11 @@ function AddTodos() {
             <input
                 type="text"
                 placeholder="Write Todo..."
-                className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
+                className="w-full border border-black/10 rounded-l-lg px-3 outline-none text-black duration-150 bg-white/20 py-1.5"
                 onChange={(e) => setTodo(e.target.value)}
                 value={todo}
             />
-            <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0">
+            <button type="submit" className="rounded-r-lg px-3 py-1 font-bold cursor-pointer bg-blue-600 text-white shrink-0">
                 Add
             </button>
         </form>

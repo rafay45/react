@@ -20,7 +20,7 @@ function AddItems({ todo }) {
         >
             <input
                 type="checkbox"
-                className="cursor-pointer"
+                className="cursor-pointer  accent-green-600"
                 checked={todo.checked}
                 onChange={toggleCompleted}
             />
