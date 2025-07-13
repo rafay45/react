@@ -7,7 +7,6 @@ function App() {
   const [from, setFrom] = useState("ADA");
   const [to, setTo] = useState("ADA");
   const [convertedAmount, setConvertedAmount] = useState();
-
   const currencyInfo = useCurrencyInfo(from) || {};
   const options = Object.keys(currencyInfo);
   console.log('=====>' , currencyInfo);
@@ -19,7 +18,6 @@ function App() {
     setAmount(convertedAmount);
     setConvertedAmount(amount);
   };
-
   const convert = () => {
     if (currencyInfo[to]) {
       setConvertedAmount(amount * currencyInfo[to].value);
