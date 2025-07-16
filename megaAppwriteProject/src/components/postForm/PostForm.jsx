@@ -14,6 +14,7 @@ function PostForm({post}) {
 
     }
   })
+  const navigate = useNavigate()
   return (
     <div>PostForm</div>
   )
