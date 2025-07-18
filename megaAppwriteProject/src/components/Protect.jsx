@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import authStatus from '../store/authSlice'
 import { useSelector } from 'react-redux'
 
 function Protect({ childern, authentication = true }) {

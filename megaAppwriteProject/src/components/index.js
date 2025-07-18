@@ -11,6 +11,11 @@ import Login from "./Login"
 import Signup from "./Signup";
 import PostForm from "./postForm/PostForm";
 import PostCard  from "./PostCard"
+import Protect from "./Protect";
+import Home from "../pages/Home"
+import AddPost from "../pages/AddPost"
+import AllPosts from "../pages/AllPosts"
+import EditPost from "../pages/EditPost"
 
 export {
     Header, 
@@ -25,5 +30,6 @@ export {
     Login,
     Signup,
     PostForm,
-    PostCard
+    PostCard,
+    Protect
 }
