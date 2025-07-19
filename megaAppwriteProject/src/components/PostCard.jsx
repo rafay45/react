@@ -1,18 +1,18 @@
 import service from '../services/service'
 import { Link } from 'react-router-dom'
-function PostCard({$id, title, featuredImage}) {
+function PostCard({ $id, title, featuredImage }) {
   return (
     <Link to={`/post/${$id}`}>
-        <div className='w-full'>
-            <div
-            className='w-fulll p-4 border-2 rounded-xl'
-            >
-                <img
-                className=' rounded-xl'
-                 src={service.getFilePreview(featuredImage)} alt={title} />
-            </div>
-            <h1>{title}</h1>
+      <div className='w-full'>
+        <div
+          className='w-fulll p-4 border-2 rounded-xl'
+        >
+          <img
+            className=' rounded-xl'
+            src={service.getFilePreview(featuredImage)} alt={title} />
         </div>
+        <h1>{title}</h1>
+      </div>
     </Link>
   )
 }

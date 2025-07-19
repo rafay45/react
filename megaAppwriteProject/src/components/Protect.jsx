@@ -10,13 +10,13 @@ function Protect({ childern, authentication = true }) {
         if (authentication && authStatus !== authentication) {
             navigate('/login')
         } else if (!authentication && authStatus !== authentication) {
-            navigate('/')   
+            navigate('/')
         }
         setLoading(false)
     }, [authStatus, authentication, navigate])
     return (
         <div>
-        {loading ? <h1>Loading...</h1> : <>{childern}</>}
+            {loading ? <h1>Loading...</h1> : <>{childern}</>}
         </div>
     )
 }
