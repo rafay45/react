@@ -52,20 +52,20 @@ function PostForm({ post }) {
         .toLowerCase()
         .replace(/^[a-zA-Z\d\s]+/g, '-')
         .replace(/\s/g, '-')
-        return ''
+      return ''
     }
   }, [])
 
   useEffect(() => {
-    const subscription = watch((value, {name}) => {
-          if(name === 'title'){
-            setValue('slug', slugTransform(value.title, {shouldValidate: true}))
-          }
+    const subscription = watch((value, { name }) => {
+      if (name === 'title') {
+        setValue('slug', slugTransform(value.title, { shouldValidate: true }))
+      }
     })
     return () => {
       subscription.unsubscribe()
     }
-  },[watch, slugTransform, setValue])
+  }, [watch, slugTransform, setValue])
   return (
     <div>PostForm</div>
   )

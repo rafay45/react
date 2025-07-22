@@ -10,12 +10,12 @@ import Select from "./Select"
 import Login from "./Login"
 import Signup from "./Signup";
 import PostForm from "./postForm/PostForm";
-import PostCard  from "./PostCard"
+import PostCard from "./PostCard"
 import Protect from "./Protect";
 
 
 export {
-    Header, 
+    Header,
     Footer,
     Container,
     Logo,
@@ -28,5 +28,5 @@ export {
     Signup,
     PostForm,
     PostCard,
-    Protect, 
+    Protect,
 }
