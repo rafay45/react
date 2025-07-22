@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import services from '../services/service'
+import { Container } from '../components'
 
 function Home() {
     const [posts, setPosts] = useState([])

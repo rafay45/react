@@ -1,7 +1,6 @@
 import { Logo, Container, LogoutBtn } from '../index'
-import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 function Header() {
 const authState = useSelector(state => state.authentication.status)
@@ -14,7 +13,7 @@ const items = [
     active: true
   },
   {
-    name: 'Login',
+    name: 'LogIn',
     slug: '/login',
     active: !authState 
   },
