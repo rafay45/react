@@ -32,14 +32,6 @@ export class Authentication {
         }
     }
 
-    async logOut() {
-        try {
-            return await this.account.deleteSessions();
-        } catch (error) {
-            console.log('AppwriteAuthentication :: Error is logOut ::', error);
-        }
-    }
-
     async getUserLocation() {
         try {
             return await this.account.get();
@@ -48,6 +40,15 @@ export class Authentication {
         }
         return null;
     }
+
+    async logOut() {
+        try {
+            return await this.account.deleteSessions();
+        } catch (error) {
+            console.log('AppwriteAuthentication :: Error is logOut ::', error);
+        }
+    }
+
 }
 
 const authentication = new Authentication()

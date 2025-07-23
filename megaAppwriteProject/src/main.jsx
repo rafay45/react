@@ -12,6 +12,7 @@ import EditPost from './pages/EditPost.jsx'
 import Post from './pages/Post.jsx'
 import { Protect } from './components/index.js'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { StrictMode } from 'react'
 
 const router = createBrowserRouter([
   {
@@ -74,7 +75,9 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
+  <StrictMode>
   <Provider store={store}>
     <RouterProvider router={router} />
-  </Provider>,
+  </Provider>
+  </StrictMode>,
 )

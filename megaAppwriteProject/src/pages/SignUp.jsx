@@ -1,9 +1,9 @@
-import { Signup } from '../components/index'
+import { Signup as Signupcomponent} from '../components/index'
 
 function SignUp() {
   return (
     <div className=' py-8'>
-        <Signup />
+        <Signupcomponent />
     </div>
   )
 }

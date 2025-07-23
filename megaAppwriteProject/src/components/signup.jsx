@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import authentication from '../services/auth'
 import { Button, Logo, Input } from './index'
-import { login as nextLog } from '../store/authSlice'
+import { login  } from '../store/authSlice'
 import { useForm } from 'react-hook-form'
 
 function signup() {
@@ -18,7 +18,7 @@ function signup() {
             const session = await authentication.createUserAccount(data);
             if (session) {
                 const getUser = await authentication.getUserLocation()
-                if (getUser) dispatch(nextLog(getUser));
+                if (getUser) dispatch(login(getUser));
                 navigate("/")
             }
         } catch (error) {
