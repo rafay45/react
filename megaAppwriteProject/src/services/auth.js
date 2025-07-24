@@ -24,6 +24,7 @@ export class Authentication {
 
         }
     }
+    
     async logIn({ email, password }) {
         try {
             return await this.account.createEmailPasswordSession(email, password);
