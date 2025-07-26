@@ -16,8 +16,8 @@ function PostForm({ post }) {
   })
   const navigate = useNavigate()
   const userData = useSelector(state => state.authentication.userData)
-  console.log("User From Redux ",userData);
-  
+  console.log("User From Redux ", userData);
+
 
   const submit = async (data) => {
     if (post) {
@@ -37,26 +37,23 @@ function PostForm({ post }) {
       if (file) {
         const fileId = file.$id
         data.featuredImage = fileId
-        const create = await services.createPost({
-          ...data,
-          userId: userData.$id
-        })
+        const create = await services.createPost({ ...data, userId: userData.$id })
         if (create) {
-          navigate(`/post/${post.$id}`)
+          navigate(`/post/${create.$id}`)
         }
       }
     }
   }
 
   const slugTransform = useCallback((value) => {
-    if (value && typeof value === 'string') {
+    if (value && typeof value === 'string') 
       return value
         .trim()
         .toLowerCase()
-        .replace(/^[a-zA-Z\d\s]+/g, '-')
+        .replace(/[^a-zA-Z\d\s]+/g, '-')
         .replace(/\s/g, '-')
-    }
-    return ''
+
+      return ''
   }, [])
 
   useEffect(() => {

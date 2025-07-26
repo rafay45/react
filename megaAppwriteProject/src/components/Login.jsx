@@ -18,7 +18,7 @@ function Login() {
             const session = await service.logIn(data)
             if (session) {
                 const userData = await service.getUserLocation()
-                if (userData) dispatch(authLogin(userData));
+                if (userData) dispatch(authLogin({userData}));
                 navigate("/")
             }
         } catch (error) {
