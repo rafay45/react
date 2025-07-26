@@ -6,7 +6,7 @@ import { useCallback, useEffect } from 'react'
 import services from '../../services/service'
 
 function PostForm({ post }) {
-  const { register, handleSubmit, watch, setValue, getValues } = useForm({
+  const { register, handleSubmit, watch, setValue, getValues, control } = useForm({
     defaultValues: {
       title: post?.title || '',
       slug: post?.slug || '',
@@ -110,7 +110,7 @@ function PostForm({ post }) {
           className="mb-4"
           {...register("status", { required: true })}
         />
-        <Button type="submit" bgColor={post ? "bg-green-500" : undefined} className="w-full">
+        <Button type="submit" bgColor={post ? "bg-green-500" : undefined} className="w-full cursor-pointer">
           {post ? "Update" : "Submit"}
         </Button>
       </div>
