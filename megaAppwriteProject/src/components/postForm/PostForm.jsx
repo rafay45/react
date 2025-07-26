@@ -16,6 +16,8 @@ function PostForm({ post }) {
   })
   const navigate = useNavigate()
   const userData = useSelector(state => state.authentication.userData)
+  console.log("User From Redux ",userData);
+  
 
   const submit = async (data) => {
     if (post) {
