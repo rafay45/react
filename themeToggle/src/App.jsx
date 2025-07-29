@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './App.css'
 import { ThemeProvider } from './contexts/Theme'
 import Toggle from './components/Toggle'
 import Card from './components/Card'

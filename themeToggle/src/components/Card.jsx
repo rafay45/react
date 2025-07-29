@@ -4,7 +4,7 @@ function Card() {
     return (
         <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="/">
-                <img className="p-8 rounded-t-lg" src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D" alt="product_image1" />
+                <img className="p-8 rounded-t-lg" src="https://cdn.salla.sa/lvble/sIY582tVkZTw5zF6Kl25v8nNDxeOBQa8LK1FItK5.jpg" alt="product_image1" />
             </a>
             <div className="px-5 pb-5">
                 <a href="/">
